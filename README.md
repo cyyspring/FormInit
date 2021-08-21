@@ -16,13 +16,13 @@ class Info {
     infoName = 'infoName'
 }
 
-class Person extends ObjectBase {
+class Person extends FormBase {
     name = 'json'
     @SerializeUtils.jsonType(Info)
     info = []
 }
 
-class A extends ObjectBase {
+class A extends FormBase {
     name = '123'
     age = '456'
     ls = [1, 2, 3]
@@ -71,14 +71,14 @@ class Info {
     infoName = 'infoName'
 }
 
-class Person extends ObjectBase {
+class Person extends FormBase {
     name = 'json'
 
     @SerializeUtils.jsonType(Info)
     info = []
 }
 
-class A extends ObjectBase {
+class A extends FormBase {
     @SerializeUtils.jsonField('newName')
     name = '123'
 
